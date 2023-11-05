@@ -24,7 +24,7 @@ We converted the above assumptions into logics and preprocessed our input files 
 7. Upload the above files in the respective file selector in web app and it will produce a Blue Print for you.
 
 ### Logic behind the algorithm:
-- You can find more in this powerpoint presentation with an explanation using one of the template files present in /Assets folder. <a href = "https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/blob/master/Project%20Presentation.pptx">[Link]</a> or <a href = "https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/blob/master/Project%20Presentation.pdf">[Pdf Version]</a>
+- You can find more in this powerpoint presentation with an explanation using one of the template files present in /Assets folder. <a href = "https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/blob/master/Presentations/Project%20Presentation.pptx">[Link]</a> or <a href = "https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/blob/master/Presentations/Project%20Presentation.pdf">[Pdf Version]</a>
 
 ### What's next for Course Roster Generator:
 - First we would want to understand how an advisor would make decision with similar information and make our program intelligent by utilizing past information and changes in the logic to mimic those decisions.
