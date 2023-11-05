@@ -11,14 +11,22 @@ st.set_page_config(
 )
 
 # page title 
-st.title("Hello, Welcome to Course Roster Generator 👋")
+st.title("Hello, Welcome to UB's Course Roster Generator 👋")
 st.write(
     """
     Created by [Akash Ponduru](https://github.com/Pi-Akash) and [Eugenia Vance](https://github.com/ginadotexe) for the [University at Buffalo's 2023 Hackathon](https://ub-hacking-fall-2023.devpost.com/)!
     
-    Check out the repository [here](https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash), and our [devpost here](https://devpost.com/software/temporary-project-name-fy7wid#updates)!
+    Check out the repository [here](https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash), and our devpost [here](https://devpost.com/software/temporary-project-name-fy7wid#updates)!
     
     Use our already created [input files](https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/tree/master/Assets) to demo our project!
+
+    ### What does it do?
+    Our program takes two inputs, both saved as comma delimited .csv files...
+    - A Professors spreadsheet listing the professor's name, preferred course, and course size
+    - A Students spreadsheet listing the Student's name, order of registration, a main class, and a backup class
+    ...and outputs a course roster that can be used as a guide for academic advisement when planning courses for the semester. 
+    It'll also show you how many seats in the coures have been unfilled, and the students that weren't able to be placed (either due to how late they registered, or the courses they registered for were already filled). 
+    You'll also have the option of saving this information as well. 
     
     Happy hacking!
     """    
