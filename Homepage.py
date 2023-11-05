@@ -6,12 +6,12 @@ from itertools import combinations
 
 # site config
 st.set_page_config(
-    page_title = "Course Planner Homepage",
+    page_title = "Course Roster Generator Homepage",
     layout = "wide"
 )
 
 # page title 
-st.title("Hello, Welcome to Course Planner 👋")
+st.title("Hello, Welcome to Course Roster Generator 👋")
 st.header("Please upload below files to start the process: ")
 
 # file upload for Professor inputs
