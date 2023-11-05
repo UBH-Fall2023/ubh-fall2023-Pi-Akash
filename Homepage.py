@@ -4,8 +4,15 @@ import streamlit as st
 import os
 from itertools import combinations
 
+# site config
+st.set_page_config(
+    page_title = "Course Planner Homepage",
+    layout = "wide"
+)
+
 # page title 
-st.title("First Page")
+st.title("Hello, Welcome to Course Planner 👋")
+st.header("Please upload below files to start the process: ")
 
 # file upload for Professor inputs
 professor_input = st.file_uploader(
@@ -136,12 +143,32 @@ n_rows, n_cols = course_students.shape
 available_class_slots = pd.DataFrame(zip(course_students["Course"], np.sum(course_students == 0.0, axis = 1)))
 vacant_slots = np.sum(course_students == 0.0, axis = 1).sum()
 
+# renaming of column names for Professors input
+Professors_df.columns = ["Professor Name", "Course", "Max Class Intake"]
+
 # Merge the professors dataframe with alloted students dataframe for final results
 course_students = Professors_df.merge(courses_students, how = "inner", left_on = "Course", right_on = "Course")
 
+# function to download the tables in a csv format
+def download_file(df, filename):
+    df.to_csv(f"{filename}.csv", index = False)
 
 # test code
+st.header("Table showcasing Students Allocated to classes and the respective Professors")
 st.write(course_students)
+allocated_table_filename = st.text_input("Enter filename if you want to download the allocated table data: ")
+st.button("Download the allocated table data", on_click = download_file(course_students, allocated_table_filename))
+
+st.header("Other Insights")
 st.write("Total Slots Available for students : ", n_rows * n_cols)
 st.write("Total Slots vacant : ", vacant_slots)
-st.write(Students_df[Students_df["Students"].isin(non_alloted_students)])
+
+st.header("Slots available in each class after allocation")
+remaining_slots = pd.DataFrame(zip(course_students["Course"], np.sum(course_students == 0.0, axis = 1))).T
+st.write(remaining_slots)
+
+st.header("Students who were not allocated any class and their priorities")
+non_allocated_df = Students_df[Students_df["Students"].isin(non_alloted_students)]
+st.write(non_allocated_df)
+nonallocated_table_filename = st.text_input("Enter filename if you want to download the non-allocated table data: ")
+st.button("Download the non-allocated table data", on_click = download_file(non_allocated_df, nonallocated_table_filename))
