@@ -24,6 +24,7 @@ st.write(
     Our program takes two inputs, both saved as comma delimited .csv files...
     - A Professors spreadsheet listing the professor's name, preferred course, and course size
     - A Students spreadsheet listing the Student's name, order of registration, a main class, and a backup class
+    
     ...and outputs a course roster that can be used as a guide for academic advisement when planning courses for the semester. 
     It'll also show you how many seats in the coures have been unfilled, and the students that weren't able to be placed (either due to how late they registered, or the courses they registered for were already filled). 
     You'll also have the option of saving this information as well. 
