@@ -12,6 +12,7 @@ st.set_page_config(
 
 # page title 
 st.title("Hello, Welcome to Course Roster Generator 👋")
+st.subheader("Created by Akash Ponduru and Eugenia Vance for UB Hackathon 2023")
 st.header("Please upload below files to start the process: ")
 
 # file upload for Professor inputs
