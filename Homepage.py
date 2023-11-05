@@ -14,8 +14,9 @@ st.set_page_config(
 st.title("Hello, Welcome to Course Roster Generator 👋")
 st.write(
     """
-    Created by <a href="https://github.com/Pi-Akash">Akash Ponduru</a> and <a href= "https://github.com/ginadotexe">Eugenia Vance</a> for the University at Buffalo's 2023 Hackathon!
-    Check out the repository <a href="https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash">here</a>, and use our already created <a href="https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/tree/master/Assets">input files</a> to demo our project!
+    Created by [Akash Ponduru](https://github.com/Pi-Akash) and [Eugenia Vance](https://github.com/ginadotexe) for the [University at Buffalo's 2023 Hackathon](https://ub-hacking-fall-2023.devpost.com/)!
+    Check out the repository (here)[https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash], and our (devpost)[https://devpost.com/software/temporary-project-name-fy7wid#updates]
+    Use our already created (input files)[https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/tree/master/Assets] to demo our project!
     Happy hacking!
     """    
 )
