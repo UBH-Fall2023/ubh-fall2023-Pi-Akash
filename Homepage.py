@@ -12,7 +12,13 @@ st.set_page_config(
 
 # page title 
 st.title("Hello, Welcome to Course Roster Generator 👋")
-st.subheader("Created by Akash Ponduru and Eugenia Vance for UB Hackathon 2023")
+st.write(
+    """
+    Created by <a href="https://github.com/Pi-Akash">Akash Ponduru</a> and <a href= "https://github.com/ginadotexe">Eugenia Vance</a> for the University at Buffalo's 2023 Hackathon!
+    Check out the repository <a href="https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash">here</a>, and use our already created <a href="https://github.com/UBH-Fall2023/ubh-fall2023-Pi-Akash/tree/master/Assets">input files</a> to demo our project!
+    Happy hacking!
+    """    
+)
 st.header("Please upload below files to start the process: ")
 
 # file upload for Professor inputs
@@ -173,3 +179,5 @@ non_allocated_df = Students_df[Students_df["Students"].isin(non_alloted_students
 st.write(non_allocated_df)
 nonallocated_table_filename = st.text_input("Enter filename if you want to download the non-allocated table data: ")
 st.button("Download the non-allocated table data", on_click = download_file(non_allocated_df, nonallocated_table_filename))
+
+st.text("Copyright 2023 Akash Ponduru and Eugenia Vance")
