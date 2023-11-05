@@ -5,7 +5,7 @@ import os
 from itertools import combinations
 
 # page title 
-st.title("First Page")
+st.title("Course Roster Builder")
 
 # file upload for Professor inputs
 professor_input = st.file_uploader(
@@ -141,7 +141,9 @@ course_students = Professors_df.merge(courses_students, how = "inner", left_on =
 
 
 # test code
+st.write("Below is the new course roster for next semester:")
 st.write(course_students)
 st.write("Total Slots Available for students : ", n_rows * n_cols)
 st.write("Total Slots vacant : ", vacant_slots)
+st.write("The following students could not be auto-sorted, please manually add them to a course:")
 st.write(Students_df[Students_df["Students"].isin(non_alloted_students)])
