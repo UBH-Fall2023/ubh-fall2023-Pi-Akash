@@ -1,7 +1,6 @@
 # UB Hacking Fall 2023 
 ## Project Title: Course Roster Generator
-## Check out the website!
-<a href = "https://ubcourserostergenerator.streamlit.app/">[Course Roster Generator]</a>
+## Check out the website here: <a href = "https://ubcourserostergenerator.streamlit.app/">[Course Roster Generator]</a>
 
 ### Problem Statement:
 <p>As a grad student, we're given a form to fill out with what electives we want to take, and those preferences are submitted to advisement for them to create a course schedule. We thought about how difficult it would be for administration to manually input everyone's preferences, while also taking into account what professors are able to teach certain courses, and how many students would fit in those courses, and create rosters manually based off that information.</p>
